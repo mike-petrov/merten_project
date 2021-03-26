@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Merten</title>
+    <meta charset='utf-8'>
+    <link rel="icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="lib/canvas2pdf.js"></script>
+    <script src="lib/blob-stream.js"></script>
+    <script src="lib/pdfkit.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="title">День выборов</div>
+        <form id="form_gen">
+            <div class="subtitle">Обработано всего (%)</div>
+            <input id="param0" min="0" max="100" type="number" value="10" required />
+            <br />
+            <div class="subtitle">Добрый (%)</div>
+            <input id="param1" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Ответственный (%)</div>
+            <input id="param2" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Справедливый (%)</div>
+            <input id="param3" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Пьющий (%)</div>
+            <input id="param4" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Зрелый (%)</div>
+            <input id="param5" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Заботливый (%)</div>
+            <input id="param6" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Капризный (%)</div>
+            <input id="param7" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Галантный (%)</div>
+            <input id="param8" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Щедрый (%)</div>
+            <input id="param9" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Веселый (%)</div>
+            <input id="param10" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Привередливый (%)</div>
+            <input id="param11" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Скрупулезный (%)</div>
+            <input id="param12" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Против всех (%)</div>
+            <input id="param13" min="0" max="100" type="number" value="10" required />
+            <div class="subtitle">Свой вариант (%)</div>
+            <input id="param14" min="0" max="100" type="number" value="10" required />
+            <button class="btn form_btn">Создать pdf</button>
+        </form>
+        <div class="title">Готовый файл pdf</div>
+        <iframe></iframe>
+    </div>
+    <script src="lib/main.js"></script>
+</body>
+
+</html>
